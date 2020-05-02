@@ -55,7 +55,7 @@ ROOT_URLCONF = 'odontogram.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/', ],
+        'DIRS': ['templates/', 'records/templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

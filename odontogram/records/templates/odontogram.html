@@ -11,11 +11,18 @@
     <div class="full half-1000">
       <article class="card" style="text-align: center;">
         <header>
-          <h2 align="center" style="color: #0066ff;"></h2>
+          <h2 align="center" style="color: #0066ff;">Mouth</h2>
         </header>
-        <p>A straightforward form to fill odontograms using django logic</p>
+        <form method="post">
+          {% csrf_token %}
+          {{ mouth_form.as_table }}
+          <label>
+            <input type="checkbox">
+            <span class="checkable">Check me out (;</span>
+          </label>
+        </form>
         <footer>
-          <a class="button success" href="{% url 'records:odontogram' %}">Go to Odontogram</a>
+          <a class="button warning" href="#">Record</a>
         </footer>
       </article>
     </div>
