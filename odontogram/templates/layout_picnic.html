@@ -1,0 +1,44 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Odontogram</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{% static 'css/picnic.min.css' %}">
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</head>
+
+<body>
+  <header style="background-color: black; text-align: center;">
+    <h1  class="brand" style="color: white;">- Odontogram form -</h1>
+      {% block clinic %}
+      {% endblock %}
+  </header>
+
+  {% block content %} {% endblock %}
+  <br><br>
+</body>
+
+<footer class="footer" style="background-color: #420420;">
+  <br>
+  <p align=center style="color: white; font-size: 0.8em;">
+    Created by &copy;
+    <a href="http://aaronmillan.com" target="_blank" style="color: yellow;"><strong>AMO</strong></a><br>
+    Powered with
+    <a href="https://www.djangoproject.com/" target="_blank" style="color: #00ff1e;"><strong>Django</strong></a>
+    and  <a href="https://picnicss.com/" target="_blank" style="color: cyan;"><strong>Picnic-CSS</strong></a>
+  </p>
+  <br>
+</footer>
+</html>
