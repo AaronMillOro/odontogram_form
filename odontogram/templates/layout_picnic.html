@@ -25,6 +25,15 @@
       {% block clinic %}
       {% endblock %}
   </header>
+
+  {% if messages %}
+    {% for message in messages %}
+      <div class="flex demo" align="center" style="background-color: #004f2b;">
+        <div><br><span style="color: white;">{{ message }}</span><br></div>
+      </div>
+    {% endfor %}
+  {% endif %}
+
   {% block content %} {% endblock %}
   <br><br>
 </body>
