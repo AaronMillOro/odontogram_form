@@ -2,21 +2,34 @@ from django import forms
 
 from .models import Mouth
 
-TEETH = (
-    ('C_11_01', 'C_11_01'),
-    ('C_11_02', 'C_11_02'),
-    ('C_11_03', 'C_11_03'),
-    ('C_11_04', 'C_11_04'),
-    ('C_11_05', 'C_11_05'),
+
+CHOICES = (
+    ('sano', 'sano'),
+    ('c1', 'c1'),
+    ('c2', 'c2'),
+    ('c3', 'c3'),
+    ('c4', 'c4'),
+    ('c5', 'c5'),
+    ('r1', 'r1'),
+    ('r2', 'r2'),
+    ('r3', 'r3'),
+    ('r4', 'r4'),
+    ('r5', 'r5'),
+    ('e', 'e'),
+    ('p', 'p'),
+    ('z', 'z'),
+    ('a', 'a'),
+    ('d', 'd'),
 )
 
-class MouthForm(forms.Form):
-    """ Add a stomatological note """
+class ToothForm(forms.ModelForm):
     t_11 = forms.MultipleChoiceField(
+        choices=CHOICES,
+        required=False,
         widget=forms.CheckboxSelectMultiple,
-        choices=TEETH,
+        #label='',
     )
 
     class Meta:
         model = Mouth
-        fields = ('t_11', )
+        fields = ['t_11', ]

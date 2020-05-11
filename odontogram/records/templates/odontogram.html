@@ -15,15 +15,23 @@
         </header>
         <form method="post">
           {% csrf_token %}
-          {{ mouth_form.as_table }}
+
+          {% for field in tooth_form.t_11 %}
+          <label for="{{ field.id_for_label }}">
+            <input type="checkbox" value="{{ field.choice_label }}" name="{{ field.data.name }}" id="{{ field.id_for_label }}">
+            <span class="checkable">
+              {{ field.choice_label }}
+              <img src="{% static 'img/small-duck.svg' %}" alt="testo" width="30" height="30">
+            </span>
           <label>
-            <input type="checkbox">
-            <span class="checkable">Check me out (;</span>
-          </label>
-        </form>
+          {% endfor %}
+
         <footer>
-          <a class="button warning" href="#">Record</a>
+          <a href="{% url 'index' %}">
+            <button type="submit" class="warning">Record</button>
+          </a>
         </footer>
+        </form>
       </article>
     </div>
     <!-- Empty container -->
