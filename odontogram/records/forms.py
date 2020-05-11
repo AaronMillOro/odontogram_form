@@ -18,8 +18,8 @@ CHOICES = (
     ('e', 'e'),
     ('p', 'p'),
     ('z', 'z'),
-    ('a', 'a'),
     ('d', 'd'),
+    ('a', 'a'),
 )
 
 class ToothForm(forms.ModelForm):

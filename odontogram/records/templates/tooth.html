@@ -1,0 +1,87 @@
+{% extends 'layout_picnic.html' %}
+{% load static %}
+
+{% block content %}
+<br><br>
+<div class="container">
+  <div class="flex four demo">
+    <!-- Empty container -->
+    <div class="half fourth-1000"></div>
+    <!-- Main container -->
+    <div class="full half-1000">
+      <article class="card" style="text-align: center;">
+        <header>
+          <h2 align="center" style="color: #0066ff;">Diente</h2>
+        </header>
+        <form method="post">
+          {% csrf_token %}
+
+          {% for field in tooth_form.t_11 %}
+          <label for="{{ field.id_for_label }}">
+            <input type="checkbox" value="{{ field.choice_label }}" name="{{ field.data.name }}" id="{{ field.id_for_label }}">
+            <span class="checkable">
+              {% if field.choice_label == 'sano' %}
+                <img src="{% static 'img/sano.png' %}" alt="tooth" width="30" height="30">
+                Sano
+              {% elif field.choice_label == 'c1' %}
+                <img src="{% static 'img/c1.png' %}" alt="tooth" width="30" height="30">
+                Caries
+              {% elif field.choice_label == 'c2' %}
+                <img src="{% static 'img/c2.png' %}" alt="tooth" width="30" height="30">
+                Caries
+              {% elif field.choice_label == 'c3' %}
+                <img src="{% static 'img/c3.png' %}" alt="tooth" width="30" height="30">
+                Caries
+              {% elif field.choice_label == 'c4' %}
+                <img src="{% static 'img/c4.png' %}" alt="tooth" width="30" height="30">
+                Caries
+              {% elif field.choice_label == 'c5' %}
+                <img src="{% static 'img/c5.png' %}" alt="tooth" width="30" height="30">
+                Caries
+              {% elif field.choice_label == 'r1' %}
+                <img src="{% static 'img/r1.png' %}" alt="tooth" width="30" height="30">
+                Restauración
+              {% elif field.choice_label == 'r2' %}
+                <img src="{% static 'img/r2.png' %}" alt="tooth" width="30" height="30">
+                Restauración
+              {% elif field.choice_label == 'r3' %}
+                <img src="{% static 'img/r3.png' %}" alt="tooth" width="30" height="30">
+                Restauración
+              {% elif field.choice_label == 'r4' %}
+                <img src="{% static 'img/r4.png' %}" alt="tooth" width="30" height="30">
+                Restauración
+              {% elif field.choice_label == 'r5' %}
+                <img src="{% static 'img/r5.png' %}" alt="tooth" width="30" height="30">
+                Restauración
+              {% elif field.choice_label == 'p' %}
+                <img src="{% static 'img/p.png' %}" alt="tooth" width="30" height="30">
+                Para extracción
+              {% elif field.choice_label == 'e' %}
+                <img src="{% static 'img/e.png' %}" alt="tooth" width="30" height="30">
+                Extracción
+              {% elif field.choice_label == 'z' %}
+                <img src="{% static 'img/z.png' %}" alt="tooth" width="30" height="30">
+                Zarro
+              {% elif field.choice_label == 'd' %}
+                <img src="{% static 'img/d.png' %}" alt="tooth" width="30" height="30">
+                Desgaste
+              {% elif field.choice_label == 'a' %}
+                <img src="{% static 'img/a.png' %}" alt="tooth" width="30" height="30">
+                Prótesis
+              {% endif %}
+            </span><br>
+          <label>
+          {% endfor %}
+        <footer>
+          <a href="{% url 'index' %}">
+            <button type="submit" class="warning">Guardar</button>
+          </a>
+        </footer>
+        </form>
+      </article>
+    </div>
+    <!-- Empty container -->
+    <div class="half fourth-1000"></div>
+  </div>
+</div>
+{% endblock %}

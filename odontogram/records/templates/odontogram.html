@@ -11,27 +11,33 @@
     <div class="full half-1000">
       <article class="card" style="text-align: center;">
         <header>
-          <h2 align="center" style="color: #0066ff;">Mouth</h2>
+          <h2 align="center" style="color: #0066ff;">Odontograma</h2>
         </header>
-        <form method="post">
-          {% csrf_token %}
-
-          {% for field in tooth_form.t_11 %}
-          <label for="{{ field.id_for_label }}">
-            <input type="checkbox" value="{{ field.choice_label }}" name="{{ field.data.name }}" id="{{ field.id_for_label }}">
-            <span class="checkable">
-              {{ field.choice_label }}
-              <img src="{% static 'img/small-duck.svg' %}" alt="testo" width="30" height="30">
-            </span>
-          <label>
-          {% endfor %}
-
+        <div style="background-color: #FF6666;" >
+          <br>
+          <a><img src="{% static 'img/18.png' %}" alt="t_18" width="19" height="55"></a>
+          <a><img src="{% static 'img/17.png' %}" alt="t_17" width="19" height="55"></a>
+          <a><img src="{% static 'img/16.png' %}" alt="t_16" width="19" height="55"></a>
+          <a><img src="{% static 'img/15_a.png' %}" alt="t_15" width="19" height="55"></a>
+          <a><img src="{% static 'img/14_a.png' %}" alt="t_14" width="19" height="55"></a>
+          <a><img src="{% static 'img/13_a.png' %}" alt="t_13" width="19" height="55"></a>
+          <a><img src="{% static 'img/12_a.png' %}" alt="t_12" width="19" height="55"></a>
+          <a><img src="{% static 'img/11_a.png' %}" alt="t_11" width="19" height="55"></a>
+          &nbsp; &nbsp; &nbsp;
+          <a><img src="{% static 'img/21.png' %}" alt="t_21" width="19" height="55"></a>
+          <a><img src="{% static 'img/22.png' %}" alt="t_22" width="19" height="55"></a>
+          <a><img src="{% static 'img/23.png' %}" alt="t_23" width="19" height="55"></a>
+          <a><img src="{% static 'img/24.png' %}" alt="t_24" width="19" height="55"></a>
+          <a><img src="{% static 'img/25.png' %}" alt="t_25" width="19" height="55"></a>
+          <a><img src="{% static 'img/26.png' %}" alt="t_26" width="19" height="55"></a>
+          <a><img src="{% static 'img/27.png' %}" alt="t_27" width="19" height="55"></a>
+          <a><img src="{% static 'img/28.png' %}" alt="t_28" width="19" height="55"></a>
+        </div>
         <footer>
-          <a href="{% url 'index' %}">
-            <button type="submit" class="warning">Record</button>
+          <a href="{% url 'records:tooth' %}">
+            <button class="success">Diente</button>
           </a>
         </footer>
-        </form>
       </article>
     </div>
     <!-- Empty container -->
