@@ -2,7 +2,6 @@ from django import forms
 
 from .models import Mouth
 
-
 CHOICES = (
     ('sano', 'sano'),
     ('c1', 'c1'),
@@ -22,7 +21,8 @@ CHOICES = (
     ('a', 'a'),
 )
 
-class ToothForm(forms.ModelForm):
+
+class T11Form(forms.ModelForm):
     t_11 = forms.MultipleChoiceField(
         choices=CHOICES,
         required=False,

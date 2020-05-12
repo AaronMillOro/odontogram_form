@@ -11,11 +11,17 @@
     <div class="full half-1000">
       <article class="card" style="text-align: center;">
         <header>
-          <h2 align="center" style="color: #0066ff;"></h2>
+          <h2 align="center" style="color: #0066ff;">Want to create an odontogram?</h2>
         </header>
-        <p>A straightforward form to fill odontograms using Django logic</p>
+        <div>
+          <br>
+          <a href="{% url 'records:new_odontogram' %}"><button class="success">Create</button></a>
+          <a href="{% url 'index' %}"><button class="error">Return</button></a>
+          <br>
+        </div>
         <footer>
-          <a class="button success" href="{% url 'records:ask_odontogram' %}">Go to Odontogram</a>
+          From here, the content will be in Spanish since
+          this was build for someone hispanophonic
         </footer>
       </article>
     </div>

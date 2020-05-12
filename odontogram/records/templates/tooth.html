@@ -73,7 +73,7 @@
           <label>
           {% endfor %}
         <footer>
-          <a href="{% url 'index' %}">
+          <a href="{% url 'records:update_odontogram' pk_mouth=pk_mouth %}">
             <button type="submit" class="warning">Guardar</button>
           </a>
         </footer>

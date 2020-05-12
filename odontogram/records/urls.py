@@ -7,6 +7,17 @@ from . import views
 app_name = 'records'
 
 urlpatterns = [
-    url(r'^$', views.new_odontogram, name='odontogram'),
-    url(r'^tooth/$', views.tooth_view, name='tooth'),
+    url(r'^$',
+        views.ask_odontogram, name='ask_odontogram'
+    ),
+    #url(r'^new_odonto_(?P<pk_mouth>\d+)/$',
+    url(r'^new_odonto/$',
+        views.new_odontogram, name='new_odontogram'
+    ),
+    url(r'^odonto_(?P<pk_mouth>\d+)/tooth_(?P<nb_tooth>\w+)/$',
+        views.tooth_view, name='tooth'
+    ),
+    url(r'^odonto_(?P<pk_mouth>\d+)/$',
+        views.update_odonto, name='update_odontogram'
+    ),
 ]
