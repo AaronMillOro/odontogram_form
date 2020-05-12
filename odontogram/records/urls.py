@@ -8,5 +8,5 @@ app_name = 'records'
 
 urlpatterns = [
     url(r'^$', views.new_odontogram, name='odontogram'),
-    url(r'^/tooth/$', views.tooth_view, name='tooth'),
+    url(r'^tooth/$', views.tooth_view, name='tooth'),
 ]
