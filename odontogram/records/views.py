@@ -57,7 +57,7 @@ def tooth_view(request, pk_mouth, nb_tooth):
         tooth_form = forms.T26Form(instance=odontogram)
     elif nb_tooth == 't_27':
         tooth_form = forms.T27Form(instance=odontogram)
-    elif nb_tooth == 'tb_28':
+    elif nb_tooth == 't_28':
         tooth_form = forms.T28Form(instance=odontogram)
     elif nb_tooth == 't_31':
         tooth_form = forms.T31Form(instance=odontogram)
@@ -178,7 +178,7 @@ def tooth_view(request, pk_mouth, nb_tooth):
         elif nb_tooth == 't_27':
             tooth_form = forms.T27Form(
                 request.POST, instance=odontogram)
-        elif nb_tooth == 'tb_28':
+        elif nb_tooth == 't_28':
             tooth_form = forms.T28Form(
                 request.POST, instance=odontogram)
         elif nb_tooth == 't_31':
