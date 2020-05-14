@@ -11,7 +11,7 @@
     <div class="full half-1000">
       <article class="card" style="text-align: center;">
         <header>
-          <h2 align="center" style="color: #0066ff;">Odontograma</h2>
+          <h2 align="center" style="color: #0066ff;">Minimalista</h2>
         </header>
         <form method="POST">
           {% csrf_token %}
@@ -20,162 +20,162 @@
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_18' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_18 == "sano" %}
-                <img src="{% static 'img/18_a.png' %}" alt="t_18" width="19" height="55">
+                <img src="{% static 'img/18_a.png' %}" alt="t_18" width="16" height="54">
               {% elif odontogram.t_18 == "['sano']" %}
-                <img src="{% static 'img/18_a.png' %}" alt="t_18" width="19" height="55">
+                <img src="{% static 'img/18_a.png' %}" alt="t_18" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/18_b.png' %}" alt="t_18" width="19" height="55">
+                <img src="{% static 'img/18_b.png' %}" alt="t_18" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_17' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_17 == "sano" %}
-                <img src="{% static 'img/17_a.png' %}" alt="t_17" width="19" height="55">
+                <img src="{% static 'img/17_a.png' %}" alt="t_17" width="16" height="54">
               {% elif odontogram.t_17 == "['sano']" %}
-                <img src="{% static 'img/17_a.png' %}" alt="t_17" width="19" height="55">
+                <img src="{% static 'img/17_a.png' %}" alt="t_17" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/17_b.png' %}" alt="t_17" width="19" height="55">
+                <img src="{% static 'img/17_b.png' %}" alt="t_17" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_16' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_16 == "sano" %}
-                <img src="{% static 'img/16_a.png' %}" alt="t_16" width="19" height="55">
+                <img src="{% static 'img/16_a.png' %}" alt="t_16" width="16" height="54">
               {% elif odontogram.t_16 == "['sano']" %}
-                <img src="{% static 'img/16_a.png' %}" alt="t_16" width="19" height="55">
+                <img src="{% static 'img/16_a.png' %}" alt="t_16" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/16_b.png' %}" alt="t_16" width="19" height="55">
+                <img src="{% static 'img/16_b.png' %}" alt="t_16" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_15' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_15 == "sano" %}
-                <img src="{% static 'img/15_a.png' %}" alt="t_15" width="19" height="55">
+                <img src="{% static 'img/15_a.png' %}" alt="t_15" width="16" height="54">
               {% elif odontogram.t_15 == "['sano']" %}
-                <img src="{% static 'img/15_a.png' %}" alt="t_15" width="19" height="55">
+                <img src="{% static 'img/15_a.png' %}" alt="t_15" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/15_b.png' %}" alt="t_15" width="19" height="55">
+                <img src="{% static 'img/15_b.png' %}" alt="t_15" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_14' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_14 == "sano" %}
-                <img src="{% static 'img/14_a.png' %}" alt="t_14" width="19" height="55">
+                <img src="{% static 'img/14_a.png' %}" alt="t_14" width="16" height="54">
               {% elif odontogram.t_14 == "['sano']" %}
-                <img src="{% static 'img/14_a.png' %}" alt="t_14" width="19" height="55">
+                <img src="{% static 'img/14_a.png' %}" alt="t_14" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/14_b.png' %}" alt="t_14" width="19" height="55">
+                <img src="{% static 'img/14_b.png' %}" alt="t_14" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_13' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_13 == "sano" %}
-                <img src="{% static 'img/13_a.png' %}" alt="t_13" width="19" height="55">
+                <img src="{% static 'img/13_a.png' %}" alt="t_13" width="16" height="54">
               {% elif odontogram.t_13 == "['sano']" %}
-                <img src="{% static 'img/13_a.png' %}" alt="t_13" width="19" height="55">
+                <img src="{% static 'img/13_a.png' %}" alt="t_13" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/13_b.png' %}" alt="t_13" width="19" height="55">
+                <img src="{% static 'img/13_b.png' %}" alt="t_13" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_12' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_12 == "sano" %}
-                <img src="{% static 'img/12_a.png' %}" alt="t_12" width="19" height="55">
+                <img src="{% static 'img/12_a.png' %}" alt="t_12" width="16" height="54">
               {% elif odontogram.t_12 == "['sano']" %}
-                <img src="{% static 'img/12_a.png' %}" alt="t_12" width="19" height="55">
+                <img src="{% static 'img/12_a.png' %}" alt="t_12" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/12_b.png' %}" alt="t_12" width="19" height="55">
+                <img src="{% static 'img/12_b.png' %}" alt="t_12" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_11' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_11 == "sano" %}
-                <img src="{% static 'img/11_a.png' %}" alt="t_11" width="19" height="55">
+                <img src="{% static 'img/11_a.png' %}" alt="t_11" width="16" height="54">
               {% elif odontogram.t_11 == "['sano']" %}
-                <img src="{% static 'img/11_a.png' %}" alt="t_11" width="19" height="55">
+                <img src="{% static 'img/11_a.png' %}" alt="t_11" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/11_b.png' %}" alt="t_11" width="19" height="55">
+                <img src="{% static 'img/11_b.png' %}" alt="t_11" width="16" height="54">
               {% endif %}
             </a>
             &nbsp; &nbsp;
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_21' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_21 == "sano" %}
-                <img src="{% static 'img/21_a.png' %}" alt="t_21" width="19" height="55">
+                <img src="{% static 'img/21_a.png' %}" alt="t_21" width="16" height="54">
               {% elif odontogram.t_21 == "['sano']" %}
-                <img src="{% static 'img/21_a.png' %}" alt="t_21" width="19" height="55">
+                <img src="{% static 'img/21_a.png' %}" alt="t_21" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/21_b.png' %}" alt="t_21" width="19" height="55">
+                <img src="{% static 'img/21_b.png' %}" alt="t_21" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_22' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_22 == "sano" %}
-                <img src="{% static 'img/22_a.png' %}" alt="t_22" width="19" height="55">
+                <img src="{% static 'img/22_a.png' %}" alt="t_22" width="16" height="54">
               {% elif odontogram.t_22 == "['sano']" %}
-                <img src="{% static 'img/22_a.png' %}" alt="t_22" width="19" height="55">
+                <img src="{% static 'img/22_a.png' %}" alt="t_22" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/22_b.png' %}" alt="t_22" width="19" height="55">
+                <img src="{% static 'img/22_b.png' %}" alt="t_22" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_23' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_23 == "sano" %}
-                <img src="{% static 'img/23_a.png' %}" alt="t_23" width="19" height="55">
+                <img src="{% static 'img/23_a.png' %}" alt="t_23" width="16" height="54">
               {% elif odontogram.t_23 == "['sano']" %}
-                <img src="{% static 'img/23_a.png' %}" alt="t_23" width="19" height="55">
+                <img src="{% static 'img/23_a.png' %}" alt="t_23" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/23_b.png' %}" alt="t_23" width="19" height="55">
+                <img src="{% static 'img/23_b.png' %}" alt="t_23" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_24' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_24 == "sano" %}
-                <img src="{% static 'img/24_a.png' %}" alt="t_24" width="19" height="55">
+                <img src="{% static 'img/24_a.png' %}" alt="t_24" width="16" height="54">
               {% elif odontogram.t_24 == "['sano']" %}
-                <img src="{% static 'img/24_a.png' %}" alt="t_24" width="19" height="55">
+                <img src="{% static 'img/24_a.png' %}" alt="t_24" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/24_b.png' %}" alt="t_24" width="19" height="55">
+                <img src="{% static 'img/24_b.png' %}" alt="t_24" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_25' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_25 == "sano" %}
-                <img src="{% static 'img/25_a.png' %}" alt="t_25" width="19" height="55">
+                <img src="{% static 'img/25_a.png' %}" alt="t_25" width="16" height="54">
               {% elif odontogram.t_25 == "['sano']" %}
-                <img src="{% static 'img/25_a.png' %}" alt="t_25" width="19" height="55">
+                <img src="{% static 'img/25_a.png' %}" alt="t_25" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/25_b.png' %}" alt="t_25" width="19" height="55">
+                <img src="{% static 'img/25_b.png' %}" alt="t_25" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_26' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_26 == "sano" %}
-                <img src="{% static 'img/26_a.png' %}" alt="t_26" width="19" height="55">
+                <img src="{% static 'img/26_a.png' %}" alt="t_26" width="16" height="54">
               {% elif odontogram.t_26 == "['sano']" %}
-                <img src="{% static 'img/26_a.png' %}" alt="t_26" width="19" height="55">
+                <img src="{% static 'img/26_a.png' %}" alt="t_26" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/26_b.png' %}" alt="t_26" width="19" height="55">
+                <img src="{% static 'img/26_b.png' %}" alt="t_26" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_27' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_27 == "sano" %}
-                <img src="{% static 'img/27_a.png' %}" alt="t_27" width="19" height="55">
+                <img src="{% static 'img/27_a.png' %}" alt="t_27" width="16" height="54">
               {% elif odontogram.t_27 == "['sano']" %}
-                <img src="{% static 'img/27_a.png' %}" alt="t_27" width="19" height="55">
+                <img src="{% static 'img/27_a.png' %}" alt="t_27" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/27_b.png' %}" alt="t_27" width="19" height="55">
+                <img src="{% static 'img/27_b.png' %}" alt="t_27" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_28' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_28 == "sano" %}
-                <img src="{% static 'img/28_a.png' %}" alt="t_28" width="19" height="55">
+                <img src="{% static 'img/28_a.png' %}" alt="t_28" width="16" height="54">
               {% elif odontogram.t_28 == "['sano']" %}
-                <img src="{% static 'img/28_a.png' %}" alt="t_28" width="19" height="55">
+                <img src="{% static 'img/28_a.png' %}" alt="t_28" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/28_b.png' %}" alt="t_28" width="19" height="55">
+                <img src="{% static 'img/28_b.png' %}" alt="t_28" width="16" height="54">
               {% endif %}
             </a>
             <br>
@@ -183,102 +183,102 @@
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_55' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_55 == "sano" %}
-              <img src="{% static 'img/55_a.png' %}" alt="t_55" width="19" height="55">
+              <img src="{% static 'img/55_a.png' %}" alt="t_55" width="16" height="54">
               {% elif odontogram.t_55 == "['sano']" %}
-              <img src="{% static 'img/55_a.png' %}" alt="t_55" width="19" height="55">
+              <img src="{% static 'img/55_a.png' %}" alt="t_55" width="16" height="54">
               {% else %}
-              <img src="{% static 'img/55_b.png' %}" alt="t_55" width="19" height="55">
+              <img src="{% static 'img/55_b.png' %}" alt="t_55" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_54' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_54 == "sano" %}
-                <img src="{% static 'img/54_a.png' %}" alt="t_54" width="19" height="55">
+                <img src="{% static 'img/54_a.png' %}" alt="t_54" width="16" height="54">
               {% elif odontogram.t_54 == "['sano']" %}
-                <img src="{% static 'img/54_a.png' %}" alt="t_54" width="19" height="55">
+                <img src="{% static 'img/54_a.png' %}" alt="t_54" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/54_b.png' %}" alt="t_54" width="19" height="55">
+                <img src="{% static 'img/54_b.png' %}" alt="t_54" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_53' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_53 == "sano" %}
-                <img src="{% static 'img/53_a.png' %}" alt="t_53" width="19" height="55">
+                <img src="{% static 'img/53_a.png' %}" alt="t_53" width="16" height="54">
               {% elif odontogram.t_53 == "['sano']" %}
-                <img src="{% static 'img/53_a.png' %}" alt="t_53" width="19" height="55">
+                <img src="{% static 'img/53_a.png' %}" alt="t_53" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/53_b.png' %}" alt="t_53" width="19" height="55">
+                <img src="{% static 'img/53_b.png' %}" alt="t_53" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_52' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_52 == "sano" %}
-                <img src="{% static 'img/52_a.png' %}" alt="t_52" width="19" height="55">
+                <img src="{% static 'img/52_a.png' %}" alt="t_52" width="16" height="54">
               {% elif odontogram.t_52 == "['sano']" %}
-                <img src="{% static 'img/52_a.png' %}" alt="t_52" width="19" height="55">
+                <img src="{% static 'img/52_a.png' %}" alt="t_52" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/52_b.png' %}" alt="t_52" width="19" height="55">
+                <img src="{% static 'img/52_b.png' %}" alt="t_52" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_51' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_51 == "sano" %}
-                <img src="{% static 'img/51_a.png' %}" alt="t_51" width="19" height="55">
+                <img src="{% static 'img/51_a.png' %}" alt="t_51" width="16" height="54">
               {% elif odontogram.t_51 == "['sano']" %}
-                <img src="{% static 'img/51_a.png' %}" alt="t_51" width="19" height="55">
+                <img src="{% static 'img/51_a.png' %}" alt="t_51" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/51_b.png' %}" alt="t_51" width="19" height="55">
+                <img src="{% static 'img/51_b.png' %}" alt="t_51" width="16" height="54">
               {% endif %}
             </a>
             &nbsp; &nbsp;
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_61' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_61 == "sano" %}
-                <img src="{% static 'img/61_a.png' %}" alt="t_61" width="19" height="55">
+                <img src="{% static 'img/61_a.png' %}" alt="t_61" width="16" height="54">
               {% elif odontogram.t_61 == "['sano']" %}
-                <img src="{% static 'img/61_a.png' %}" alt="t_61" width="19" height="55">
+                <img src="{% static 'img/61_a.png' %}" alt="t_61" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/61_b.png' %}" alt="t_61" width="19" height="55">
+                <img src="{% static 'img/61_b.png' %}" alt="t_61" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_62' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_62 == "sano" %}
-                <img src="{% static 'img/62_a.png' %}" alt="t_62" width="19" height="55">
+                <img src="{% static 'img/62_a.png' %}" alt="t_62" width="16" height="54">
               {% elif odontogram.t_62 == "['sano']" %}
-                <img src="{% static 'img/62_a.png' %}" alt="t_62" width="19" height="55">
+                <img src="{% static 'img/62_a.png' %}" alt="t_62" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/62_b.png' %}" alt="t_62" width="19" height="55">
+                <img src="{% static 'img/62_b.png' %}" alt="t_62" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_63' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_63 == "sano" %}
-                <img src="{% static 'img/63_a.png' %}" alt="t_63" width="19" height="55">
+                <img src="{% static 'img/63_a.png' %}" alt="t_63" width="16" height="54">
               {% elif odontogram.t_63 == "['sano']" %}
-                <img src="{% static 'img/63_a.png' %}" alt="t_63" width="19" height="55">
+                <img src="{% static 'img/63_a.png' %}" alt="t_63" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/63_b.png' %}" alt="t_63" width="19" height="55">
+                <img src="{% static 'img/63_b.png' %}" alt="t_63" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_64' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_64 == "sano" %}
-                <img src="{% static 'img/64_a.png' %}" alt="t_64" width="19" height="55">
+                <img src="{% static 'img/64_a.png' %}" alt="t_64" width="16" height="54">
               {% elif odontogram.t_64 == "['sano']" %}
-                <img src="{% static 'img/64_a.png' %}" alt="t_64" width="19" height="55">
+                <img src="{% static 'img/64_a.png' %}" alt="t_64" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/64_b.png' %}" alt="t_64" width="19" height="55">
+                <img src="{% static 'img/64_b.png' %}" alt="t_64" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_65' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_65 == "sano" %}
-                <img src="{% static 'img/65_a.png' %}" alt="t_65" width="19" height="55">
+                <img src="{% static 'img/65_a.png' %}" alt="t_65" width="16" height="54">
               {% elif odontogram.t_65 == "['sano']" %}
-                <img src="{% static 'img/65_a.png' %}" alt="t_65" width="19" height="55">
+                <img src="{% static 'img/65_a.png' %}" alt="t_65" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/65_b.png' %}" alt="t_65" width="19" height="55">
+                <img src="{% static 'img/65_b.png' %}" alt="t_65" width="16" height="54">
               {% endif %}
             </a>
             <br><br>
@@ -286,271 +286,271 @@
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_85' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_85 == "sano" %}
-              <img src="{% static 'img/85_a.png' %}" alt="t_85" width="19" height="55">
+              <img src="{% static 'img/85_a.png' %}" alt="t_85" width="16" height="54">
               {% elif odontogram.t_85 == "['sano']" %}
-              <img src="{% static 'img/85_a.png' %}" alt="t_85" width="19" height="55">
+              <img src="{% static 'img/85_a.png' %}" alt="t_85" width="16" height="54">
               {% else %}
-              <img src="{% static 'img/85_b.png' %}" alt="t_85" width="19" height="55">
+              <img src="{% static 'img/85_b.png' %}" alt="t_85" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_84' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_84 == "sano" %}
-                <img src="{% static 'img/84_a.png' %}" alt="t_84" width="19" height="55">
+                <img src="{% static 'img/84_a.png' %}" alt="t_84" width="16" height="54">
               {% elif odontogram.t_84 == "['sano']" %}
-                <img src="{% static 'img/84_a.png' %}" alt="t_84" width="19" height="55">
+                <img src="{% static 'img/84_a.png' %}" alt="t_84" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/84_b.png' %}" alt="t_84" width="19" height="55">
+                <img src="{% static 'img/84_b.png' %}" alt="t_84" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_83' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_83 == "sano" %}
-                <img src="{% static 'img/83_a.png' %}" alt="t_83" width="19" height="55">
+                <img src="{% static 'img/83_a.png' %}" alt="t_83" width="16" height="54">
               {% elif odontogram.t_83 == "['sano']" %}
-                <img src="{% static 'img/83_a.png' %}" alt="t_83" width="19" height="55">
+                <img src="{% static 'img/83_a.png' %}" alt="t_83" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/83_b.png' %}" alt="t_83" width="19" height="55">
+                <img src="{% static 'img/83_b.png' %}" alt="t_83" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_82' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_82 == "sano" %}
-                <img src="{% static 'img/82_a.png' %}" alt="t_82" width="19" height="55">
+                <img src="{% static 'img/82_a.png' %}" alt="t_82" width="16" height="54">
               {% elif odontogram.t_82 == "['sano']" %}
-                <img src="{% static 'img/82_a.png' %}" alt="t_82" width="19" height="55">
+                <img src="{% static 'img/82_a.png' %}" alt="t_82" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/82_b.png' %}" alt="t_82" width="19" height="55">
+                <img src="{% static 'img/82_b.png' %}" alt="t_82" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_81' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_81 == "sano" %}
-                <img src="{% static 'img/81_a.png' %}" alt="t_81" width="19" height="55">
+                <img src="{% static 'img/81_a.png' %}" alt="t_81" width="16" height="54">
               {% elif odontogram.t_81 == "['sano']" %}
-                <img src="{% static 'img/81_a.png' %}" alt="t_81" width="19" height="55">
+                <img src="{% static 'img/81_a.png' %}" alt="t_81" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/81_b.png' %}" alt="t_81" width="19" height="55">
+                <img src="{% static 'img/81_b.png' %}" alt="t_81" width="16" height="54">
               {% endif %}
             </a>
             &nbsp; &nbsp;
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_71' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_71 == "sano" %}
-                <img src="{% static 'img/71_a.png' %}" alt="t_71" width="19" height="55">
+                <img src="{% static 'img/71_a.png' %}" alt="t_71" width="16" height="54">
               {% elif odontogram.t_71 == "['sano']" %}
-                <img src="{% static 'img/71_a.png' %}" alt="t_71" width="19" height="55">
+                <img src="{% static 'img/71_a.png' %}" alt="t_71" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/71_b.png' %}" alt="t_71" width="19" height="55">
+                <img src="{% static 'img/71_b.png' %}" alt="t_71" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_72' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_72 == "sano" %}
-                <img src="{% static 'img/72_a.png' %}" alt="t_72" width="19" height="55">
+                <img src="{% static 'img/72_a.png' %}" alt="t_72" width="16" height="54">
               {% elif odontogram.t_72 == "['sano']" %}
-                <img src="{% static 'img/72_a.png' %}" alt="t_72" width="19" height="55">
+                <img src="{% static 'img/72_a.png' %}" alt="t_72" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/72_b.png' %}" alt="t_72" width="19" height="55">
+                <img src="{% static 'img/72_b.png' %}" alt="t_72" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_73' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_73 == "sano" %}
-                <img src="{% static 'img/73_a.png' %}" alt="t_73" width="19" height="55">
+                <img src="{% static 'img/73_a.png' %}" alt="t_73" width="16" height="54">
               {% elif odontogram.t_73 == "['sano']" %}
-                <img src="{% static 'img/73_a.png' %}" alt="t_73" width="19" height="55">
+                <img src="{% static 'img/73_a.png' %}" alt="t_73" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/73_b.png' %}" alt="t_73" width="19" height="55">
+                <img src="{% static 'img/73_b.png' %}" alt="t_73" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_74' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_74 == "sano" %}
-                <img src="{% static 'img/74_a.png' %}" alt="t_74" width="19" height="55">
+                <img src="{% static 'img/74_a.png' %}" alt="t_74" width="16" height="54">
               {% elif odontogram.t_74 == "['sano']" %}
-                <img src="{% static 'img/74_a.png' %}" alt="t_74" width="19" height="55">
+                <img src="{% static 'img/74_a.png' %}" alt="t_74" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/74_b.png' %}" alt="t_74" width="19" height="55">
+                <img src="{% static 'img/74_b.png' %}" alt="t_74" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_75' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_75 == "sano" %}
-                <img src="{% static 'img/75_a.png' %}" alt="t_75" width="19" height="55">
+                <img src="{% static 'img/75_a.png' %}" alt="t_75" width="16" height="54">
               {% elif odontogram.t_75 == "['sano']" %}
-                <img src="{% static 'img/75_a.png' %}" alt="t_75" width="19" height="55">
+                <img src="{% static 'img/75_a.png' %}" alt="t_75" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/75_b.png' %}" alt="t_75" width="19" height="55">
+                <img src="{% static 'img/75_b.png' %}" alt="t_75" width="16" height="54">
               {% endif %}
             </a>
             <br>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_48' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_48 == "sano" %}
-                <img src="{% static 'img/48_a.png' %}" alt="t_48" width="19" height="55">
+                <img src="{% static 'img/48_a.png' %}" alt="t_48" width="16" height="54">
               {% elif odontogram.t_48 == "['sano']" %}
-                <img src="{% static 'img/48_a.png' %}" alt="t_48" width="19" height="55">
+                <img src="{% static 'img/48_a.png' %}" alt="t_48" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/48_b.png' %}" alt="t_48" width="19" height="55">
+                <img src="{% static 'img/48_b.png' %}" alt="t_48" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_47' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_47 == "sano" %}
-                <img src="{% static 'img/47_a.png' %}" alt="t_47" width="19" height="55">
+                <img src="{% static 'img/47_a.png' %}" alt="t_47" width="16" height="54">
               {% elif odontogram.t_47 == "['sano']" %}
-                <img src="{% static 'img/47_a.png' %}" alt="t_47" width="19" height="55">
+                <img src="{% static 'img/47_a.png' %}" alt="t_47" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/47_b.png' %}" alt="t_47" width="19" height="55">
+                <img src="{% static 'img/47_b.png' %}" alt="t_47" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_46' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_46 == "sano" %}
-                <img src="{% static 'img/46_a.png' %}" alt="t_46" width="19" height="55">
+                <img src="{% static 'img/46_a.png' %}" alt="t_46" width="16" height="54">
               {% elif odontogram.t_46 == "['sano']" %}
-                <img src="{% static 'img/46_a.png' %}" alt="t_46" width="19" height="55">
+                <img src="{% static 'img/46_a.png' %}" alt="t_46" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/46_b.png' %}" alt="t_46" width="19" height="55">
+                <img src="{% static 'img/46_b.png' %}" alt="t_46" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_45' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_45 == "sano" %}
-                <img src="{% static 'img/45_a.png' %}" alt="t_45" width="19" height="55">
+                <img src="{% static 'img/45_a.png' %}" alt="t_45" width="16" height="54">
               {% elif odontogram.t_45 == "['sano']" %}
-                <img src="{% static 'img/45_a.png' %}" alt="t_45" width="19" height="55">
+                <img src="{% static 'img/45_a.png' %}" alt="t_45" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/45_b.png' %}" alt="t_45" width="19" height="55">
+                <img src="{% static 'img/45_b.png' %}" alt="t_45" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_44' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_44 == "sano" %}
-                <img src="{% static 'img/44_a.png' %}" alt="t_44" width="19" height="55">
+                <img src="{% static 'img/44_a.png' %}" alt="t_44" width="16" height="54">
               {% elif odontogram.t_44 == "['sano']" %}
-                <img src="{% static 'img/44_a.png' %}" alt="t_44" width="19" height="55">
+                <img src="{% static 'img/44_a.png' %}" alt="t_44" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/44_b.png' %}" alt="t_44" width="19" height="55">
+                <img src="{% static 'img/44_b.png' %}" alt="t_44" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_43' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_43 == "sano" %}
-                <img src="{% static 'img/43_a.png' %}" alt="t_43" width="19" height="55">
+                <img src="{% static 'img/43_a.png' %}" alt="t_43" width="16" height="54">
               {% elif odontogram.t_43 == "['sano']" %}
-                <img src="{% static 'img/43_a.png' %}" alt="t_43" width="19" height="55">
+                <img src="{% static 'img/43_a.png' %}" alt="t_43" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/43_b.png' %}" alt="t_43" width="19" height="55">
+                <img src="{% static 'img/43_b.png' %}" alt="t_43" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_42' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_42 == "sano" %}
-                <img src="{% static 'img/42_a.png' %}" alt="t_42" width="19" height="55">
+                <img src="{% static 'img/42_a.png' %}" alt="t_42" width="16" height="54">
               {% elif odontogram.t_42 == "['sano']" %}
-                <img src="{% static 'img/42_a.png' %}" alt="t_42" width="19" height="55">
+                <img src="{% static 'img/42_a.png' %}" alt="t_42" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/42_b.png' %}" alt="t_42" width="19" height="55">
+                <img src="{% static 'img/42_b.png' %}" alt="t_42" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_41' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_41 == "sano" %}
-                <img src="{% static 'img/41_a.png' %}" alt="t_41" width="19" height="55">
+                <img src="{% static 'img/41_a.png' %}" alt="t_41" width="16" height="54">
               {% elif odontogram.t_41 == "['sano']" %}
-                <img src="{% static 'img/41_a.png' %}" alt="t_41" width="19" height="55">
+                <img src="{% static 'img/41_a.png' %}" alt="t_41" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/41_b.png' %}" alt="t_41" width="19" height="55">
+                <img src="{% static 'img/41_b.png' %}" alt="t_41" width="16" height="54">
               {% endif %}
             </a>
             &nbsp; &nbsp;
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_31' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_31 == "sano" %}
-                <img src="{% static 'img/31_a.png' %}" alt="t_31" width="19" height="55">
+                <img src="{% static 'img/31_a.png' %}" alt="t_31" width="16" height="54">
               {% elif odontogram.t_31 == "['sano']" %}
-                <img src="{% static 'img/31_a.png' %}" alt="t_31" width="19" height="55">
+                <img src="{% static 'img/31_a.png' %}" alt="t_31" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/31_b.png' %}" alt="t_31" width="19" height="55">
+                <img src="{% static 'img/31_b.png' %}" alt="t_31" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_32' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_32 == "sano" %}
-                <img src="{% static 'img/32_a.png' %}" alt="t_32" width="19" height="55">
+                <img src="{% static 'img/32_a.png' %}" alt="t_32" width="16" height="54">
               {% elif odontogram.t_32 == "['sano']" %}
-                <img src="{% static 'img/32_a.png' %}" alt="t_32" width="19" height="55">
+                <img src="{% static 'img/32_a.png' %}" alt="t_32" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/32_b.png' %}" alt="t_32" width="19" height="55">
+                <img src="{% static 'img/32_b.png' %}" alt="t_32" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_33' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_33 == "sano" %}
-                <img src="{% static 'img/33_a.png' %}" alt="t_33" width="19" height="55">
+                <img src="{% static 'img/33_a.png' %}" alt="t_33" width="16" height="54">
               {% elif odontogram.t_33 == "['sano']" %}
-                <img src="{% static 'img/33_a.png' %}" alt="t_33" width="19" height="55">
+                <img src="{% static 'img/33_a.png' %}" alt="t_33" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/33_b.png' %}" alt="t_33" width="19" height="55">
+                <img src="{% static 'img/33_b.png' %}" alt="t_33" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_34' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_34 == "sano" %}
-                <img src="{% static 'img/34_a.png' %}" alt="t_34" width="19" height="55">
+                <img src="{% static 'img/34_a.png' %}" alt="t_34" width="16" height="54">
               {% elif odontogram.t_34 == "['sano']" %}
-                <img src="{% static 'img/34_a.png' %}" alt="t_34" width="19" height="55">
+                <img src="{% static 'img/34_a.png' %}" alt="t_34" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/34_b.png' %}" alt="t_34" width="19" height="55">
+                <img src="{% static 'img/34_b.png' %}" alt="t_34" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_35' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_35 == "sano" %}
-                <img src="{% static 'img/35_a.png' %}" alt="t_35" width="19" height="55">
+                <img src="{% static 'img/35_a.png' %}" alt="t_35" width="16" height="54">
               {% elif odontogram.t_35 == "['sano']" %}
-                <img src="{% static 'img/35_a.png' %}" alt="t_35" width="19" height="55">
+                <img src="{% static 'img/35_a.png' %}" alt="t_35" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/35_b.png' %}" alt="t_35" width="19" height="55">
+                <img src="{% static 'img/35_b.png' %}" alt="t_35" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_36' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_36 == "sano" %}
-                <img src="{% static 'img/36_a.png' %}" alt="t_36" width="19" height="55">
+                <img src="{% static 'img/36_a.png' %}" alt="t_36" width="16" height="54">
               {% elif odontogram.t_36 == "['sano']" %}
-                <img src="{% static 'img/36_a.png' %}" alt="t_36" width="19" height="55">
+                <img src="{% static 'img/36_a.png' %}" alt="t_36" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/36_b.png' %}" alt="t_36" width="19" height="55">
+                <img src="{% static 'img/36_b.png' %}" alt="t_36" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_37' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_37 == "sano" %}
-                <img src="{% static 'img/37_a.png' %}" alt="t_37" width="19" height="55">
+                <img src="{% static 'img/37_a.png' %}" alt="t_37" width="16" height="54">
               {% elif odontogram.t_37 == "['sano']" %}
-                <img src="{% static 'img/37_a.png' %}" alt="t_37" width="19" height="55">
+                <img src="{% static 'img/37_a.png' %}" alt="t_37" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/37_b.png' %}" alt="t_37" width="19" height="55">
+                <img src="{% static 'img/37_b.png' %}" alt="t_37" width="16" height="54">
               {% endif %}
             </a>
             <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_38' %}">
               <input type="hidden" value="submit">
               {% if odontogram.t_38 == "sano" %}
-                <img src="{% static 'img/38_a.png' %}" alt="t_38" width="19" height="55">
+                <img src="{% static 'img/38_a.png' %}" alt="t_38" width="16" height="54">
               {% elif odontogram.t_38 == "['sano']" %}
-                <img src="{% static 'img/38_a.png' %}" alt="t_38" width="19" height="55">
+                <img src="{% static 'img/38_a.png' %}" alt="t_38" width="16" height="54">
               {% else %}
-                <img src="{% static 'img/38_b.png' %}" alt="t_38" width="19" height="55">
+                <img src="{% static 'img/38_b.png' %}" alt="t_38" width="16" height="54">
               {% endif %}
             </a>
             <br>
           </div>
         </form>
         <footer>
-          <a href="{% url 'index' %}">
+          <a href="{% url 'records:odontogram_in_codes' pk_mouth=odontogram.id %}">
             <button class="success">Vista con códigos</button>
           </a>
         </footer>

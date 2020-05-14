@@ -10,7 +10,6 @@ urlpatterns = [
     url(r'^$',
         views.ask_odontogram, name='ask_odontogram'
     ),
-    #url(r'^new_odonto_(?P<pk_mouth>\d+)/$',
     url(r'^new_odonto/$',
         views.new_odontogram, name='new_odontogram'
     ),
@@ -19,5 +18,8 @@ urlpatterns = [
     ),
     url(r'^odonto_(?P<pk_mouth>\d+)/$',
         views.update_odonto, name='update_odontogram'
+    ),
+    url(r'^odonto_code_(?P<pk_mouth>\d+)/$',
+        views.view_odonto, name='odontogram_in_codes'
     ),
 ]

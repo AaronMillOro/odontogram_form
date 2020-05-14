@@ -1,3 +1,4 @@
+import ast
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -304,11 +305,25 @@ def tooth_view(request, pk_mouth, nb_tooth):
 
 def update_odonto(request, pk_mouth):
     odontogram = Mouth.objects.get(pk=pk_mouth)
-    print(pk_mouth)
     if request.method == 'POST':
         return redirect('record:tooth', pk_mouth=pk_mouth)
     return render(request, 'odontogram.html', {
         'odontogram': odontogram,
         'pk_mouth': pk_mouth,
+        }
+    )
+
+
+def view_odonto(request, pk_mouth):
+    odontogram = Mouth.objects.get(pk=pk_mouth)
+    #t18 = ast.literal_eval(odontogram.t_18)
+    #t18 = odontogram.t_18
+    #print(t18, type(t18))
+    if request.method == 'POST':
+        return redirect('record:tooth', pk_mouth=pk_mouth)
+    return render(request, 'odontogram_codes.html', {
+        'odontogram': odontogram,
+        'pk_mouth': pk_mouth,
+    #    't18': t18,
         }
     )
