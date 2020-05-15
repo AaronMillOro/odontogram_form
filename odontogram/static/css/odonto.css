@@ -264,6 +264,12 @@
   left: 2px;
   font-size: 12px;
 }
+.text_l2 {
+  position: absolute;
+  bottom: -45px;
+  left: 2px;
+  font-size: 12px;
+}
 .inner_tooth{
   position: absolute;
   top: 0;

@@ -316,9 +316,9 @@ def update_odonto(request, pk_mouth):
 def view_odonto(request, pk_mouth):
     odontogram = Mouth.objects.get(pk=pk_mouth)
     treatments = [
-        'c1', 'c2', 'c3', 'c4', 'c5',
+        'sano', 'c1', 'c2', 'c3', 'c4', 'c5',
         'r1', 'r2', 'r3', 'r4', 'r5',
-        'e', 'p', 'z', 'd', 'g', 'sano',
+        'e', 'p', 'z', 'd', 'g',
     ]
     if request.method == 'POST':
         return redirect('record:tooth', pk_mouth=pk_mouth)
