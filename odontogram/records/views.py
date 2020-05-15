@@ -25,7 +25,6 @@ def new_odontogram(request):
 
 def tooth_view(request, pk_mouth, nb_tooth):
     nb_tooth
-    print(nb_tooth)
     odontogram = Mouth.objects.get(pk=pk_mouth)
     # Selection of field
     if nb_tooth == 't_11':
@@ -294,7 +293,7 @@ def tooth_view(request, pk_mouth, nb_tooth):
             # append to profile
             tooth_form.save()
             messages.success(request,'Estado del diente actualizado!')
-            return redirect('record:update_odontogram', pk_mouth=pk_mouth)
+            return redirect('record:odontogram_in_codes', pk_mouth=pk_mouth)
     return render(request, 'tooth.html', {
         'tooth_form': tooth_form,
         'pk_mouth': pk_mouth,
@@ -316,14 +315,16 @@ def update_odonto(request, pk_mouth):
 
 def view_odonto(request, pk_mouth):
     odontogram = Mouth.objects.get(pk=pk_mouth)
-    #t18 = ast.literal_eval(odontogram.t_18)
-    #t18 = odontogram.t_18
-    #print(t18, type(t18))
+    treatments = [
+        'c1', 'c2', 'c3', 'c4', 'c5',
+        'r1', 'r2', 'r3', 'r4', 'r5',
+        'e', 'p', 'z', 'd', 'g', 'sano',
+    ]
     if request.method == 'POST':
         return redirect('record:tooth', pk_mouth=pk_mouth)
     return render(request, 'odontogram_codes.html', {
         'odontogram': odontogram,
         'pk_mouth': pk_mouth,
-    #    't18': t18,
+        'treatments': treatments,
         }
     )

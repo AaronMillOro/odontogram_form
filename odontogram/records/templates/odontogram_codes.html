@@ -21,9 +21,12 @@
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_18' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">18</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/c5.png' %}" alt="t_18" width="20" height="20">
-                <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static 'img/c2.png' %}" alt="t_18" width="20" height="20">
-                <img class="inner_tooth" style="position: absolute; z-index : 2;" src="{% static 'img/d.png' %}" alt="t_18" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_18" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_18 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_18" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p2">
@@ -31,7 +34,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">17</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_17" width="20" height="20">
-                <img class="inner_tooth" style="position: absolute; z-index : 2;" src="{% static 'img/z.png' %}" alt="t_18" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_17 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_17" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p3">
@@ -39,6 +46,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">16</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_16" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_16 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_16" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p4">
@@ -46,6 +58,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">15</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_15" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_15 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_15" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p5">
@@ -53,6 +70,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">14</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_14" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_14 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_14" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p6">
@@ -60,6 +82,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">13</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_13" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_13 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_13" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p7">
@@ -67,6 +94,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">12</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_12" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_12 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_12" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p8">
@@ -74,62 +106,107 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">11</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_11" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_11 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_11" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p9">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_21' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">21</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/a.png' %}" alt="t_21" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_21" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_21 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_21" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p10">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_22' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">22</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/p.png' %}" alt="t_22" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_22" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_22 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_22" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p11">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_23' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">23</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/d.png' %}" alt="t_23" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_23" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_23 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_23" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p12">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_24' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">24</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/r1.png' %}" alt="t_24" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_24" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_24 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_24" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p13">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_25' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">25</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/e.png' %}" alt="t_25" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_25" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_25 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_25" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p14">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_26' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">26</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/c5.png' %}" alt="t_26" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_26" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_26 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_26" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p15">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_27' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">27</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/d.png' %}" alt="t_27" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_27" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_27 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_27" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line1_p16">
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_28' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">28</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/c3.png' %}" alt="t_28" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_28" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_28 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_28" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <br><br>
@@ -137,7 +214,12 @@
               <a href="{% url 'records:tooth' pk_mouth=odontogram.id nb_tooth='t_55' %}">
                 <input type="hidden" value="submit">
                 <span class="text_l1">55</span>
-                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/c3.png' %}" alt="t_55" width="20" height="20">
+                <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_55" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_55 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_55" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p5">
@@ -145,6 +227,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">54</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_54" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_54 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_54" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p6">
@@ -152,6 +239,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">53</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_53" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_53 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_53" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p7">
@@ -159,6 +251,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">52</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_52" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_52 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_52" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p8">
@@ -166,6 +263,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">51</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_51" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_51 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_51" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p9">
@@ -173,6 +275,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">61</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_61" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_61 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_61" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p10">
@@ -180,6 +287,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">62</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_62" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_62 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_62" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p11">
@@ -187,6 +299,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">63</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_63" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_63 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_63" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p12">
@@ -194,6 +311,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">64</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_64" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_64 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_64" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line2_p13">
@@ -201,6 +323,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">65</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_65" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_65 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_65" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
               <br><br><br>
@@ -209,6 +336,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">85</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_85" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_85 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_85" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p5">
@@ -216,6 +348,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">84</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_84" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_84 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_84" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p6">
@@ -223,6 +360,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">83</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_83" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_83 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_83" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p7">
@@ -230,6 +372,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">82</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_82" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_82 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_82" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p8">
@@ -237,6 +384,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">81</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_81" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_81 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_81" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p9">
@@ -244,6 +396,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">71</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_71" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_71 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_71" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p10">
@@ -251,6 +408,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">72</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_72" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_72 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_72" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p11">
@@ -258,6 +420,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">73</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_73" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_73 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_73" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p12">
@@ -265,6 +432,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">74</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_74" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_74 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_74" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line3_p13">
@@ -272,6 +444,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">75</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_75" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_75 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_75" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <br><br>
@@ -280,6 +457,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">48</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_48" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_48 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_48" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p2">
@@ -287,6 +469,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">47</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_47" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_47 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_47" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p3">
@@ -294,6 +481,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">46</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_46" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_46 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_46" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p4">
@@ -301,6 +493,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">45</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_45" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_45 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_45" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p5">
@@ -308,6 +505,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">44</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_44" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_44 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_44" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p6">
@@ -315,6 +517,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">43</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_43" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_43 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_43" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p7">
@@ -322,6 +529,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">42</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_42" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_42 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_42" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p8">
@@ -329,6 +541,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">41</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_41" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_41 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_41" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p9">
@@ -336,6 +553,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">31</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_31" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_31 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_31" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p10">
@@ -343,6 +565,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">32</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_32" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_32 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_32" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p11">
@@ -350,6 +577,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">33</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_33" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_33 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_33" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p12">
@@ -357,6 +589,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">34</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_34" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_34 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_34" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p13">
@@ -364,6 +601,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">35</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_35" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_35 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_35" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p14">
@@ -371,6 +613,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">36</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_36" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_36 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_36" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p15">
@@ -378,6 +625,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">37</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_37" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_37 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_37" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <div class="line4_p16">
@@ -385,6 +637,11 @@
                 <input type="hidden" value="submit">
                 <span class="text_l1">38</span>
                 <img class="inner_tooth" style="position: absolute; z-index : 0;" src="{% static 'img/sano.png' %}" alt="t_38" width="20" height="20">
+                {% for t in treatments %}
+                  {% if t in odontogram.t_38 %}
+                    <img class="inner_tooth" style="position: absolute; z-index : 1;" src="{% static "img/"|add:t|add:".png" %}" alt="t_38" width="20" height="20">
+                  {% endif %}
+                {% endfor %}
               </a>
             </div>
             <br><br>
