@@ -11,7 +11,7 @@
     <div class="full half-1000">
       <article class="card" style="text-align: center;">
         <header>
-          <h2 align="center" style="color: #0066ff;">Códigos</h2><br>se recomienda vista panorámica
+          <h2 align="center" style="color: #0066ff;">Versión con códigos</h2>
         </header>
         <form method="POST">
           {% csrf_token %}
@@ -645,7 +645,7 @@
               </a>
             </div>
             <br><br>
-          </div>
+          </div><br>
         </form>
         <footer>
           <a href="{% url 'records:update_odontogram' pk_mouth=odontogram.id %}">

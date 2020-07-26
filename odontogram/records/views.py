@@ -318,7 +318,7 @@ def view_odonto(request, pk_mouth):
     treatments = [
         'sano', 'c1', 'c2', 'c3', 'c4', 'c5',
         'r1', 'r2', 'r3', 'r4', 'r5',
-        'e', 'p', 'z', 'd', 'g',
+        'e', 'N', 'PL', 'p', 'z', 'd', 'g',
     ]
     if request.method == 'POST':
         return redirect('record:tooth', pk_mouth=pk_mouth)
