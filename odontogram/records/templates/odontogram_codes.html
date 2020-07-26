@@ -645,8 +645,29 @@
               </a>
             </div>
             <br><br>
-          </div><br>
-        </form>
+          </div>
+        </form><br>
+        <!-- legend -->
+        <div class="half third-900">
+          Sano <img src="{% static 'img/sano.png' %}" alt="tooth" width="30" height="30"><br>
+          Caries <img src="{% static 'img/c1.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/c2.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/c3.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/c4.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/c5.png' %}" alt="tooth" width="30" height="30"><br>
+          Restauración <img src="{% static 'img/r1.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/r2.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/r3.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/r4.png' %}" alt="tooth" width="30" height="30">
+          <img src="{% static 'img/r5.png' %}" alt="tooth" width="30" height="30"><br>
+          Para extracción <img src="{% static 'img/p.png' %}" alt="tooth" width="30" height="30"><br>
+          Extracción <img src="{% static 'img/e.png' %}" alt="tooth" width="30" height="30"><br>
+          Endodoncia <img src="{% static 'img/N.png' %}" alt="tooth" width="30" height="30"><br>
+          Pulpa con lesión <img src="{% static 'img/PL.png' %}" alt="tooth" width="30" height="30"><br>
+          Zarro <img src="{% static 'img/z.png' %}" alt="tooth" width="30" height="30"><br>
+          Desgaste <img src="{% static 'img/d.png' %}" alt="tooth" width="30" height="30"><br>
+          Prótesis <img src="{% static 'img/g.png' %}" alt="tooth" width="30" height="30"> <br>
+        </div>
         <footer>
           <a href="{% url 'records:update_odontogram' pk_mouth=odontogram.id %}">
             <button class="warning">Vista con imágenes</button>
