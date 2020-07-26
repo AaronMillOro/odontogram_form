@@ -18,11 +18,16 @@ The odontogram allows to record different states of the teeth from a given patie
 * Dental plaque
 * Inplant
 
+![Figure display](https://github.com/AaronMillOro/odontogram_form/blob/master/graphs/odontogram_2.png)
+
+![Figure display](https://github.com/AaronMillOro/odontogram_form/blob/master/graphs/odontogram_1.png)
+
+
 The app was built in Spanish since this project is proposed to someone Hispanophone.
 
 ## Test the app
 
-![](https://github.com/AaronMillOro/odontogram_form/blob/master/demo.gif)
+![](https://github.com/AaronMillOro/odontogram_form/blob/master/graphs/demo.gif)
 
 1. Install and run pipenv to generate a virtual environment.
 
